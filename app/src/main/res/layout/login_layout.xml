@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#F16A6A"
     tools:context=".LoginActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
+        android:textColor="@color/white"
         android:layout_margin="20sp"
         android:textSize="20sp"
         android:text="Sign in"
@@ -38,6 +40,8 @@
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:background="#EC9B9B"
             android:inputType="textEmailAddress"
             android:maxLength="80" />
 
@@ -65,6 +69,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
+            android:paddingTop="20dp"
+            android:background="#EC9B9B"
             android:maxLength="80" />
 
     </LinearLayout>
@@ -75,21 +81,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:backgroundTint="#FFFFFF"
         android:orientation="horizontal">
 
-        <Button
+        <TextView
             android:id="@+id/btnCreate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:text="Create a new account"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="15dp"
+            android:gravity="center_horizontal"
+            android:background="#EC9B9B"
             android:layout_marginRight="5dp" />
 
-        <Button
+        <TextView
             android:id="@+id/btnSigin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:paddingHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:paddingVertical="15dp"
+            android:background="#EC9B9B"
             android:layout_marginLeft="5dp"
             android:text="sign in" />
     </LinearLayout>

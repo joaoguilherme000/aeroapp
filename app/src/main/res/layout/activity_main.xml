@@ -4,18 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ED6868"
-    android:gravity="center"
+    android:background="#EC9B9B"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imgSol"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scaleType="centerCrop"
-        android:padding="10dp"
-        android:src="@drawable/sol"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F16A6A"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-        />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="App Name"
+            android:textSize="20sp"
+
+            />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="199dp"
+            android:src="@drawable/lapis" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/pontos" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edtTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:drawableEnd="@drawable/search"
+        android:hint="Text Field"
+        android:inputType="textEmailAddress"
+        android:maxLength="80" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="20sp"
+            android:background="#EC9B9B" />
+
+
+    </LinearLayout>
 
 </LinearLayout>
