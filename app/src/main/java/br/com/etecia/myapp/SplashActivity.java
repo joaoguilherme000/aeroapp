@@ -10,7 +10,7 @@ import android.widget.ImageView;
 public class SplashActivity extends AppCompatActivity {
     //declarar uma variavel global do tipo objeto no layout
 
-    ImageView imgLogo; // tipo
+    ImageView imgSol; // tipo
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +18,10 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.splash_layout);
 
         // variavel
-        imgLogo = findViewById(R.id.imgLogo);
+        imgSol = findViewById(R.id.imgSol);
 
         // criando o evento de click na imagem
-        imgLogo.setOnClickListener(new View.OnClickListener() {
+        imgSol.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(SplashActivity.this, LoginActivity.class));
