@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#F16A6A"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
     <TextView
@@ -13,17 +13,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
-        android:textColor="@color/white"
         android:layout_margin="20sp"
-        android:textSize="20sp"
         android:text="Sign in"
-        />
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_margin="20sp"
+        android:orientation="vertical"
 
         >
 
@@ -32,26 +31,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:textSize="15sp"
             android:text="User Name/email adress"
-            />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="20dp"
             android:background="#EC9B9B"
+            android:hint="."
             android:inputType="textEmailAddress"
-            android:maxLength="80" />
+            android:maxLength="80"
+            android:paddingTop="20dp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_margin="20sp"
+        android:orientation="vertical"
 
         >
 
@@ -60,21 +59,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:textSize="15sp"
+            android:hint="."
             android:text="Password"
-            />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/edtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:paddingTop="20dp"
             android:background="#EC9B9B"
-            android:maxLength="80" />
+            android:hint="."
+            android:inputType="textEmailAddress"
+            android:maxLength="80"
+            android:paddingTop="20dp" />
 
     </LinearLayout>
-
 
 
     <LinearLayout
@@ -88,24 +87,28 @@
             android:id="@+id/btnCreate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
             android:layout_weight="2"
-            android:text="Create a new account"
-            android:paddingHorizontal="20dp"
-            android:paddingVertical="15dp"
-            android:gravity="center_horizontal"
             android:background="#EC9B9B"
-            android:layout_marginRight="5dp" />
+            android:gravity="center_horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:text="Create a new account" />
 
         <TextView
             android:id="@+id/btnSigin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingHorizontal="20dp"
-            android:gravity="center_horizontal"
-            android:paddingVertical="15dp"
-            android:background="#EC9B9B"
             android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#EC9B9B"
+            android:gravity="center_horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
             android:text="sign in" />
     </LinearLayout>
 </LinearLayout>

@@ -85,11 +85,11 @@
         android:textColorHint="@color/white" />
 
     <Button
-        android:backgroundTint="#EC3737"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:drawableRight="@drawable/baseline_person_add_alt"
+        android:backgroundTint="#EC3737"
+        android:drawableLeft="@drawable/baseline_person_add"
         android:paddingLeft="100sp" />
 
 
